@@ -34,13 +34,13 @@ with open ('csv/Machine_Name.csv','r')as MI:
         List_of_Name.append(row)
 
 #Dictionnaire du types
-with open ('csv/Machine_Type.csv','r')as MT:
+with open ('csv/Machine_Types.csv','r')as MT:
     Type = csv.DictReader(MT)
     for row in Type :
         List_of_type.append(row)
 
 #Dictionnaire du types
-with open ('csv/Machine_Address.csv','r')as MA:
+with open ('csv/Machine_Adresse.csv','r')as MA:
     Addresse = csv.DictReader(MA)
     for row in Addresse :
         List_of_addresse.append(row)

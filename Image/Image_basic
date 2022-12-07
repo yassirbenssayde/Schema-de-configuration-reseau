@@ -1,7 +1,0 @@
-digraph "Schema du reseau" {
-	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Schema du reseau" nodesep=0.60 pad=2.0 rankdir=BT ranksep=0.75 splines=ortho]
-	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
-	edge [color="#7B8894"]
-	ff30363377624c5d80eea198222ba0be [label=S2 height=1.9 image="C:\Program Files\Python39\lib\site-packages\resources/aws/management\opsworks-deployments.png" shape=none]
-	"432369477c5f49f9828a372bae50d753" [label=S5 height=1.9 image="C:\Program Files\Python39\lib\site-packages\resources/aws/management\opsworks-deployments.png" shape=none]
-}

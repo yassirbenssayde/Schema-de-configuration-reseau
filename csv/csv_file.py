@@ -98,7 +98,7 @@ def mod_machine (searchkey, folder =""):
         mod_row("Machine_Interface.csv", searchkey)
         mod_row("Machine_Address.csv", searchkey)
 
-#initialise le tableau des identifiants
+#Initialise le premier identifiant libre
 def next_id(folder =""):
     result = 1
     if folder != "":
@@ -112,7 +112,7 @@ def next_id(folder =""):
                 result = line_value
         return result+1
 
-#crée une nouvelle machine
+#Crée une nouvelle machine
 def add_machine(folder =""):
     id = next_id(folder)
     if folder != "":
@@ -126,6 +126,7 @@ def add_machine(folder =""):
         add_row("Machine_Interface.csv", id)
         add_row("Machine_Address.csv", id)
 
+#Sert pour les tests
 def main():
     add_machine("csv")
     

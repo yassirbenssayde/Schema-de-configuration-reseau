@@ -18,29 +18,29 @@ result = []
 interutil = []
 interutil1 = []
 
-#------------------------OUVERTURE DES CSV----------------------
+#------------------------OUVERTURE DES csv----------------------
 
 #Dictionnaire du Machine_Interface
-with open ('CSV/Machine_Interface.csv','r')as MI:
+with open ('csv/Machine_Interface.csv','r')as MI:
     Interface = csv.DictReader(MI)
     for row in Interface :
         List_of_Interface.append(row)
 List_of_Inter = List_of_Interface.copy()
     
 #Dictionnaire du Machine_Name
-with open ('CSV/Machine_Name.csv','r')as MI:
+with open ('csv/Machine_Name.csv','r')as MI:
     Name = csv.DictReader(MI)
     for row in Name :
         List_of_Name.append(row)
 
 #Dictionnaire du types
-with open ('CSV/Machine_Types.csv','r')as MT:
+with open ('csv/Machine_Type.csv','r')as MT:
     Type = csv.DictReader(MT)
     for row in Type :
         List_of_type.append(row)
 
 #Dictionnaire du types
-with open ('CSV/Machine_Adresse.csv','r')as MA:
+with open ('csv/Machine_Address.csv','r')as MA:
     Addresse = csv.DictReader(MA)
     for row in Addresse :
         List_of_addresse.append(row)
@@ -81,7 +81,7 @@ for row in List_of_complet:
 #tdebut "recherche de liens"
 def find_Interface(path, looking_for):
     with open(path, 'r') as file:
-        if (path.__contains__("CSV/Machine_Interface")):
+        if (path.__contains__("csv/Machine_Interface")):
             reader = csv.DictReader(file)
             
             for line in reader:
@@ -99,7 +99,7 @@ def find_Interface(path, looking_for):
 
 def find_Interface2(path, looking_for):
     with open(path, 'r') as file:
-        if (path.__contains__("CSV/Machine_Interface")):
+        if (path.__contains__("csv/Machine_Interface")):
             reader = csv.DictReader(file)
             for line in reader:
                 test2 = line["Interface2"]
@@ -142,7 +142,7 @@ with Diagram("Schema du reseau", show=False, filename="Image/Image_basic", direc
             search = search[3:]
             #print(search)
             
-            find_Interface("CSV/Machine_Interface.csv",search)
+            find_Interface("csv/Machine_Interface.csv",search)
             result.remove(str(row['Interface1']))
             #print("Interface connecter")
             #print(result)
@@ -171,7 +171,7 @@ with Diagram("Schema du reseau", show=False, filename="Image/Image_basic", direc
                 search = row['Interface2']
                 search = search[3:]
                 #print(search)
-                find_Interface2("CSV/Machine_Interface.csv",search)
+                find_Interface2("csv/Machine_Interface.csv",search)
                 result.remove(str(row['Interface2']))
                 #print(result)
                 

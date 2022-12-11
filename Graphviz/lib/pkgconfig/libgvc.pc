@@ -6,7 +6,7 @@ plugins=7
 
 Name: libgvc
 Description: The GraphVizContext library 
-Version: 7.0.1
+Version: 5.0.1
 Libs: -L${libdir} -lgvc -lcgraph -lcdt
 Cflags: -I${includedir}
 

@@ -1,7 +1,8 @@
-Id_Machine,Machine_Type
+Id_machine,Machine_type
 1,Routeur
 2,Switch
 3,Machine
 4,Routeur
 5,Switch
 6,Machine
+7,Machine
